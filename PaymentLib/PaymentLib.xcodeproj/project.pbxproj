@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		292EC9E428E86117006CD474 /* PaymentLib.docc in Sources */ = {isa = PBXBuildFile; fileRef = 292EC9E328E86117006CD474 /* PaymentLib.docc */; };
+		292EC9EA28E86118006CD474 /* PaymentLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 292EC9DF28E86117006CD474 /* PaymentLib.framework */; };
+		292EC9EF28E86118006CD474 /* PaymentLibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292EC9EE28E86118006CD474 /* PaymentLibTests.swift */; };
+		292EC9F028E86118006CD474 /* PaymentLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 292EC9E228E86117006CD474 /* PaymentLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		292ECA3728E862AF006CD474 /* PayrocExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ECA3628E862AF006CD474 /* PayrocExampleApp.swift */; };
+		292ECA3928E862AF006CD474 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ECA3828E862AF006CD474 /* ContentView.swift */; };
+		292ECA3B28E862B0006CD474 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 292ECA3A28E862B0006CD474 /* Assets.xcassets */; };
+		292ECA3E28E862B0006CD474 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 292ECA3D28E862B0006CD474 /* Preview Assets.xcassets */; };
+		292ECA4028E862B0006CD474 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ECA3F28E862B0006CD474 /* Persistence.swift */; };
+		292ECA4328E862B0006CD474 /* PayrocExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 292ECA4128E862B0006CD474 /* PayrocExample.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		292EC9EB28E86118006CD474 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 292EC9D628E86117006CD474 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 292EC9DE28E86117006CD474;
+			remoteInfo = PaymentLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		292EC9DF28E86117006CD474 /* PaymentLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PaymentLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		292EC9E228E86117006CD474 /* PaymentLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaymentLib.h; sourceTree = "<group>"; };
+		292EC9E328E86117006CD474 /* PaymentLib.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = PaymentLib.docc; sourceTree = "<group>"; };
+		292EC9E928E86118006CD474 /* PaymentLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaymentLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		292EC9EE28E86118006CD474 /* PaymentLibTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentLibTests.swift; sourceTree = "<group>"; };
+		292ECA3428E862AF006CD474 /* PayrocExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PayrocExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		292ECA3628E862AF006CD474 /* PayrocExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayrocExampleApp.swift; sourceTree = "<group>"; };
+		292ECA3828E862AF006CD474 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		292ECA3A28E862B0006CD474 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		292ECA3D28E862B0006CD474 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		292ECA3F28E862B0006CD474 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		292ECA4228E862B0006CD474 /* PayrocExample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PayrocExample.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		292EC9DC28E86117006CD474 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		292EC9E628E86118006CD474 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				292EC9EA28E86118006CD474 /* PaymentLib.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		292ECA3128E862AF006CD474 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		292EC9D528E86117006CD474 = {
+			isa = PBXGroup;
+			children = (
+				292EC9E128E86117006CD474 /* PaymentLib */,
+				292EC9ED28E86118006CD474 /* PaymentLibTests */,
+				292ECA3528E862AF006CD474 /* PayrocExample */,
+				292EC9E028E86117006CD474 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		292EC9E028E86117006CD474 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				292EC9DF28E86117006CD474 /* PaymentLib.framework */,
+				292EC9E928E86118006CD474 /* PaymentLibTests.xctest */,
+				292ECA3428E862AF006CD474 /* PayrocExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		292EC9E128E86117006CD474 /* PaymentLib */ = {
+			isa = PBXGroup;
+			children = (
+				292EC9E228E86117006CD474 /* PaymentLib.h */,
+				292EC9E328E86117006CD474 /* PaymentLib.docc */,
+			);
+			path = PaymentLib;
+			sourceTree = "<group>";
+		};
+		292EC9ED28E86118006CD474 /* PaymentLibTests */ = {
+			isa = PBXGroup;
+			children = (
+				292EC9EE28E86118006CD474 /* PaymentLibTests.swift */,
+			);
+			path = PaymentLibTests;
+			sourceTree = "<group>";
+		};
+		292ECA3528E862AF006CD474 /* PayrocExample */ = {
+			isa = PBXGroup;
+			children = (
+				292ECA3628E862AF006CD474 /* PayrocExampleApp.swift */,
+				292ECA3828E862AF006CD474 /* ContentView.swift */,
+				292ECA3A28E862B0006CD474 /* Assets.xcassets */,
+				292ECA3F28E862B0006CD474 /* Persistence.swift */,
+				292ECA4128E862B0006CD474 /* PayrocExample.xcdatamodeld */,
+				292ECA3C28E862B0006CD474 /* Preview Content */,
+			);
+			path = PayrocExample;
+			sourceTree = "<group>";
+		};
+		292ECA3C28E862B0006CD474 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				292ECA3D28E862B0006CD474 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		292EC9DA28E86117006CD474 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				292EC9F028E86118006CD474 /* PaymentLib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		292EC9DE28E86117006CD474 /* PaymentLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 292EC9F328E86118006CD474 /* Build configuration list for PBXNativeTarget "PaymentLib" */;
+			buildPhases = (
+				292EC9DA28E86117006CD474 /* Headers */,
+				292EC9DB28E86117006CD474 /* Sources */,
+				292EC9DC28E86117006CD474 /* Frameworks */,
+				292EC9DD28E86117006CD474 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PaymentLib;
+			productName = PaymentLib;
+			productReference = 292EC9DF28E86117006CD474 /* PaymentLib.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		292EC9E828E86118006CD474 /* PaymentLibTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 292EC9F628E86118006CD474 /* Build configuration list for PBXNativeTarget "PaymentLibTests" */;
+			buildPhases = (
+				292EC9E528E86118006CD474 /* Sources */,
+				292EC9E628E86118006CD474 /* Frameworks */,
+				292EC9E728E86118006CD474 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				292EC9EC28E86118006CD474 /* PBXTargetDependency */,
+			);
+			name = PaymentLibTests;
+			productName = PaymentLibTests;
+			productReference = 292EC9E928E86118006CD474 /* PaymentLibTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		292ECA3328E862AF006CD474 /* PayrocExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 292ECA4428E862B0006CD474 /* Build configuration list for PBXNativeTarget "PayrocExample" */;
+			buildPhases = (
+				292ECA3028E862AF006CD474 /* Sources */,
+				292ECA3128E862AF006CD474 /* Frameworks */,
+				292ECA3228E862AF006CD474 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PayrocExample;
+			productName = PayrocExample;
+			productReference = 292ECA3428E862AF006CD474 /* PayrocExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		292EC9D628E86117006CD474 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					292EC9DE28E86117006CD474 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					292EC9E828E86118006CD474 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					292ECA3328E862AF006CD474 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 292EC9D928E86117006CD474 /* Build configuration list for PBXProject "PaymentLib" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 292EC9D528E86117006CD474;
+			productRefGroup = 292EC9E028E86117006CD474 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				292EC9DE28E86117006CD474 /* PaymentLib */,
+				292EC9E828E86118006CD474 /* PaymentLibTests */,
+				292ECA3328E862AF006CD474 /* PayrocExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		292EC9DD28E86117006CD474 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		292EC9E728E86118006CD474 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		292ECA3228E862AF006CD474 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				292ECA3E28E862B0006CD474 /* Preview Assets.xcassets in Resources */,
+				292ECA3B28E862B0006CD474 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		292EC9DB28E86117006CD474 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				292EC9E428E86117006CD474 /* PaymentLib.docc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		292EC9E528E86118006CD474 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				292EC9EF28E86118006CD474 /* PaymentLibTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		292ECA3028E862AF006CD474 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				292ECA4328E862B0006CD474 /* PayrocExample.xcdatamodeld in Sources */,
+				292ECA4028E862B0006CD474 /* Persistence.swift in Sources */,
+				292ECA3928E862AF006CD474 /* ContentView.swift in Sources */,
+				292ECA3728E862AF006CD474 /* PayrocExampleApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		292EC9EC28E86118006CD474 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 292EC9DE28E86117006CD474 /* PaymentLib */;
+			targetProxy = 292EC9EB28E86118006CD474 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		292EC9F128E86118006CD474 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		292EC9F228E86118006CD474 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		292EC9F428E86118006CD474 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ie.leizhang.payroc.PaymentLib;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		292EC9F528E86118006CD474 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ie.leizhang.payroc.PaymentLib;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		292EC9F728E86118006CD474 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ie.leizhang.payroc.PaymentLibTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		292EC9F828E86118006CD474 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ie.leizhang.payroc.PaymentLibTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		292ECA4528E862B0006CD474 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PayrocExample/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ie.leizhang.payroc.PayrocExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		292ECA4628E862B0006CD474 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PayrocExample/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ie.leizhang.payroc.PayrocExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		292EC9D928E86117006CD474 /* Build configuration list for PBXProject "PaymentLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				292EC9F128E86118006CD474 /* Debug */,
+				292EC9F228E86118006CD474 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		292EC9F328E86118006CD474 /* Build configuration list for PBXNativeTarget "PaymentLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				292EC9F428E86118006CD474 /* Debug */,
+				292EC9F528E86118006CD474 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		292EC9F628E86118006CD474 /* Build configuration list for PBXNativeTarget "PaymentLibTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				292EC9F728E86118006CD474 /* Debug */,
+				292EC9F828E86118006CD474 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		292ECA4428E862B0006CD474 /* Build configuration list for PBXNativeTarget "PayrocExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				292ECA4528E862B0006CD474 /* Debug */,
+				292ECA4628E862B0006CD474 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		292ECA4128E862B0006CD474 /* PayrocExample.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				292ECA4228E862B0006CD474 /* PayrocExample.xcdatamodel */,
+			);
+			currentVersion = 292ECA4228E862B0006CD474 /* PayrocExample.xcdatamodel */;
+			path = PayrocExample.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 292EC9D628E86117006CD474 /* Project object */;
+}
