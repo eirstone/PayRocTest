@@ -10,27 +10,47 @@ import XCTest
 
 class PaymentLibTests: XCTestCase {
 
+    private var sut: PayRocXmlParser<Card>!
+    
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        let bundle = Bundle(for: type(of: self))
+        guard let url = bundle.path(forResource: "cardDataMock", ofType: "xml") else {
+            print("The mock data is not found at the bundle")
+            return
+        }
+        
+        let dataUrl = URL(string: "file://\(url)")
+        if let data = try? Data(contentsOf: dataUrl!) {
+            sut = PayRocXmlParser<Card>(data: data)
+        }
+        else {
+            XCTFail("The XML data not found at specified url")
+        }
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        sut = nil
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testXMLReader() throws {
+        // Parsing
+        let cards: [Card] = sut.parse()
+        
+        // Should be two cards in XML
+        XCTAssertTrue(cards.count == 2)
+        
+        // Test first card
+        XCTAssert(cards[0].ksn == "f8765432110000000080")
+        XCTAssert(cards[0].payloadType == "EMV")
+        XCTAssert(cards[0].tags["8c"] == "9f02069f03069f1a0295055f2a029a039c019f37049f35019f45029f4c089f34039f21039f7c14")
+        XCTAssertTrue(cards[0].tags.count == 52)
+        
+        // Test second card
+        XCTAssert(cards[1].ksn == "F876543211000000007B")
+        XCTAssert(cards[1].name == "Test Card Swipe")
+        XCTAssert(cards[1].sn == "1850010868")
+        XCTAssert(cards[1].encryptedData == "FAF2A7467873C0ED88F54ED8299F1CCB885919E6487EB8D3E586C34BA84A5E27F689FA97ECA9BA04")
+        XCTAssert(cards[1].payloadType == "MAG_STRIPE")
     }
 
 }

@@ -17,6 +17,13 @@
 		292ECA3E28E862B0006CD474 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 292ECA3D28E862B0006CD474 /* Preview Assets.xcassets */; };
 		292ECA4028E862B0006CD474 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ECA3F28E862B0006CD474 /* Persistence.swift */; };
 		292ECA4328E862B0006CD474 /* PayrocExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 292ECA4128E862B0006CD474 /* PayrocExample.xcdatamodeld */; };
+		292ECA4F28E86639006CD474 /* XmlObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ECA4E28E86639006CD474 /* XmlObj.swift */; };
+		292ECA5128E866A6006CD474 /* PayRocXmlParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ECA5028E866A6006CD474 /* PayRocXmlParser.swift */; };
+		292ECA5428E86869006CD474 /* DataModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ECA5328E86869006CD474 /* DataModelFactory.swift */; };
+		292ECA5628E8689A006CD474 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ECA5528E8689A006CD474 /* Card.swift */; };
+		292ECA5828E885B4006CD474 /* card_data.xml in Resources */ = {isa = PBXBuildFile; fileRef = 292ECA5728E885B4006CD474 /* card_data.xml */; };
+		292ECA5A28E889F8006CD474 /* cardDataMock.xml in Resources */ = {isa = PBXBuildFile; fileRef = 292ECA5928E889F8006CD474 /* cardDataMock.xml */; };
+		292ECA5C28E88A2A006CD474 /* TransactionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ECA5B28E88A2A006CD474 /* TransactionType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +49,13 @@
 		292ECA3D28E862B0006CD474 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		292ECA3F28E862B0006CD474 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		292ECA4228E862B0006CD474 /* PayrocExample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PayrocExample.xcdatamodel; sourceTree = "<group>"; };
+		292ECA4E28E86639006CD474 /* XmlObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlObj.swift; sourceTree = "<group>"; };
+		292ECA5028E866A6006CD474 /* PayRocXmlParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayRocXmlParser.swift; sourceTree = "<group>"; };
+		292ECA5328E86869006CD474 /* DataModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModelFactory.swift; sourceTree = "<group>"; };
+		292ECA5528E8689A006CD474 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		292ECA5728E885B4006CD474 /* card_data.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = card_data.xml; sourceTree = "<group>"; };
+		292ECA5928E889F8006CD474 /* cardDataMock.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = cardDataMock.xml; sourceTree = "<group>"; };
+		292ECA5B28E88A2A006CD474 /* TransactionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +107,9 @@
 		292EC9E128E86117006CD474 /* PaymentLib */ = {
 			isa = PBXGroup;
 			children = (
+				292ECA5728E885B4006CD474 /* card_data.xml */,
+				292ECA5228E86859006CD474 /* Factory */,
+				292ECA4D28E86626006CD474 /* Data */,
 				292EC9E228E86117006CD474 /* PaymentLib.h */,
 				292EC9E328E86117006CD474 /* PaymentLib.docc */,
 			);
@@ -102,6 +119,7 @@
 		292EC9ED28E86118006CD474 /* PaymentLibTests */ = {
 			isa = PBXGroup;
 			children = (
+				292ECA5928E889F8006CD474 /* cardDataMock.xml */,
 				292EC9EE28E86118006CD474 /* PaymentLibTests.swift */,
 			);
 			path = PaymentLibTests;
@@ -126,6 +144,25 @@
 				292ECA3D28E862B0006CD474 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		292ECA4D28E86626006CD474 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				292ECA4E28E86639006CD474 /* XmlObj.swift */,
+				292ECA5028E866A6006CD474 /* PayRocXmlParser.swift */,
+				292ECA5528E8689A006CD474 /* Card.swift */,
+				292ECA5B28E88A2A006CD474 /* TransactionType.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		292ECA5228E86859006CD474 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				292ECA5328E86869006CD474 /* DataModelFactory.swift */,
+			);
+			path = Factory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +278,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				292ECA5828E885B4006CD474 /* card_data.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +286,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				292ECA5A28E889F8006CD474 /* cardDataMock.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +306,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				292ECA5428E86869006CD474 /* DataModelFactory.swift in Sources */,
+				292ECA4F28E86639006CD474 /* XmlObj.swift in Sources */,
+				292ECA5628E8689A006CD474 /* Card.swift in Sources */,
 				292EC9E428E86117006CD474 /* PaymentLib.docc in Sources */,
+				292ECA5C28E88A2A006CD474 /* TransactionType.swift in Sources */,
+				292ECA5128E866A6006CD474 /* PayRocXmlParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +522,7 @@
 		292EC9F728E86118006CD474 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -493,6 +538,7 @@
 		292EC9F828E86118006CD474 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
