@@ -7,7 +7,8 @@
 
 import Foundation
 
-enum TransactionType {
-    case mag_stripe
-    case emv
+/// The Card's TransactionType
+public enum TransactionType: String {
+    case mag_stripe = "MAG_STRIPE"
+    case emv        = "EMV"
 }

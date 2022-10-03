@@ -7,15 +7,16 @@
 
 import SwiftUI
 import CoreData
+import PaymentLib
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
-
+    
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
         animation: .default)
     private var items: FetchedResults<Item>
-
+    
     var body: some View {
         NavigationView {
             List {
@@ -43,6 +44,12 @@ struct ContentView: View {
     }
 
     private func addItem() {
+        do {
+            let card = try PaymentLib.getRandomCard()
+        } catch let error {
+            print("Error \(error)")
+        }
+        
         withAnimation {
             let newItem = Item(context: viewContext)
             newItem.timestamp = Date()

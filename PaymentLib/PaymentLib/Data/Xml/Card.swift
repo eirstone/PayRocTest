@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Card {
+public class Card {
     var ksn: String
     var payloadType: String
     var name: String?
@@ -32,6 +32,14 @@ class Card {
         var value: String {
             return self.rawValue
         }
+    }
+}
+
+extension Card {
+    /// Return a transaction type for card
+    public func getTransactionType() -> TransactionType {
+        // Use force unwrapped optional because we're sure there are only two type of transaction (either EMV or MAG_STRIPE)
+        return TransactionType(rawValue: self.payloadType)!
     }
 }
 

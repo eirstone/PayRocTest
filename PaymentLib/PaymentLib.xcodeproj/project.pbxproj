@@ -24,6 +24,25 @@
 		292ECA5828E885B4006CD474 /* card_data.xml in Resources */ = {isa = PBXBuildFile; fileRef = 292ECA5728E885B4006CD474 /* card_data.xml */; };
 		292ECA5A28E889F8006CD474 /* cardDataMock.xml in Resources */ = {isa = PBXBuildFile; fileRef = 292ECA5928E889F8006CD474 /* cardDataMock.xml */; };
 		292ECA5C28E88A2A006CD474 /* TransactionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ECA5B28E88A2A006CD474 /* TransactionType.swift */; };
+		292ECA5E28E8A7C1006CD474 /* PaymentLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ECA5D28E8A7C1006CD474 /* PaymentLib.swift */; };
+		292ECA6128E8E4E5006CD474 /* PaymentError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ECA6028E8E4E5006CD474 /* PaymentError.swift */; };
+		292ECA6428E8E56A006CD474 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ECA6328E8E56A006CD474 /* MainView.swift */; };
+		292ECA6628E8E7B2006CD474 /* PaymentLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 292EC9DF28E86117006CD474 /* PaymentLib.framework */; platformFilter = ios; };
+		292ECA6728E8E7B2006CD474 /* PaymentLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 292EC9DF28E86117006CD474 /* PaymentLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		292ECA6C28EA0D9E006CD474 /* ServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ECA6B28EA0D9E006CD474 /* ServiceFactory.swift */; };
+		292ECA7528EA0F8A006CD474 /* APIEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ECA7428EA0F8A006CD474 /* APIEndPoint.swift */; };
+		292ECA7828EA11C5006CD474 /* PaymentEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ECA7728EA11C5006CD474 /* PaymentEndPoint.swift */; };
+		292ECA7B28EA15B5006CD474 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ECA7A28EA15B5006CD474 /* WebService.swift */; };
+		292ECA7D28EA15C5006CD474 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ECA7C28EA15C5006CD474 /* APIService.swift */; };
+		292ECA8028EA1693006CD474 /* PaymentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ECA7F28EA1693006CD474 /* PaymentRequest.swift */; };
+		292ECA8228EA169B006CD474 /* PaymentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ECA8128EA169B006CD474 /* PaymentResponse.swift */; };
+		292ECA8528EA1D69006CD474 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ECA8428EA1D69006CD474 /* Order.swift */; };
+		292ECA8728EA1D77006CD474 /* CustomerAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ECA8628EA1D77006CD474 /* CustomerAccount.swift */; };
+		292ECA8928EA1D84006CD474 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ECA8828EA1D84006CD474 /* Device.swift */; };
+		292ECA8B28EA2893006CD474 /* SecurityCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ECA8A28EA2893006CD474 /* SecurityCheck.swift */; };
+		292ECA8D28EA28C3006CD474 /* TransactionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ECA8C28EA28C3006CD474 /* TransactionResult.swift */; };
+		292ECA8F28EA2997006CD474 /* AdditionalDataFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ECA8E28EA2997006CD474 /* AdditionalDataFields.swift */; };
+		292ECA9128EAD108006CD474 /* EmvTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292ECA9028EAD108006CD474 /* EmvTags.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +53,28 @@
 			remoteGlobalIDString = 292EC9DE28E86117006CD474;
 			remoteInfo = PaymentLib;
 		};
+		292ECA6828E8E7B2006CD474 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 292EC9D628E86117006CD474 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 292EC9DE28E86117006CD474;
+			remoteInfo = PaymentLib;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		292ECA6A28E8E7B2006CD474 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				292ECA6728E8E7B2006CD474 /* PaymentLib.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		292EC9DF28E86117006CD474 /* PaymentLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PaymentLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +96,23 @@
 		292ECA5728E885B4006CD474 /* card_data.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = card_data.xml; sourceTree = "<group>"; };
 		292ECA5928E889F8006CD474 /* cardDataMock.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = cardDataMock.xml; sourceTree = "<group>"; };
 		292ECA5B28E88A2A006CD474 /* TransactionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionType.swift; sourceTree = "<group>"; };
+		292ECA5D28E8A7C1006CD474 /* PaymentLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentLib.swift; sourceTree = "<group>"; };
+		292ECA6028E8E4E5006CD474 /* PaymentError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentError.swift; sourceTree = "<group>"; };
+		292ECA6328E8E56A006CD474 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		292ECA6B28EA0D9E006CD474 /* ServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFactory.swift; sourceTree = "<group>"; };
+		292ECA7428EA0F8A006CD474 /* APIEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndPoint.swift; sourceTree = "<group>"; };
+		292ECA7728EA11C5006CD474 /* PaymentEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentEndPoint.swift; sourceTree = "<group>"; };
+		292ECA7A28EA15B5006CD474 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		292ECA7C28EA15C5006CD474 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		292ECA7F28EA1693006CD474 /* PaymentRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentRequest.swift; sourceTree = "<group>"; };
+		292ECA8128EA169B006CD474 /* PaymentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentResponse.swift; sourceTree = "<group>"; };
+		292ECA8428EA1D69006CD474 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		292ECA8628EA1D77006CD474 /* CustomerAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerAccount.swift; sourceTree = "<group>"; };
+		292ECA8828EA1D84006CD474 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		292ECA8A28EA2893006CD474 /* SecurityCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityCheck.swift; sourceTree = "<group>"; };
+		292ECA8C28EA28C3006CD474 /* TransactionResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionResult.swift; sourceTree = "<group>"; };
+		292ECA8E28EA2997006CD474 /* AdditionalDataFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalDataFields.swift; sourceTree = "<group>"; };
+		292ECA9028EAD108006CD474 /* EmvTags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmvTags.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				292ECA6628E8E7B2006CD474 /* PaymentLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +149,7 @@
 				292EC9ED28E86118006CD474 /* PaymentLibTests */,
 				292ECA3528E862AF006CD474 /* PayrocExample */,
 				292EC9E028E86117006CD474 /* Products */,
+				292ECA6528E8E7B2006CD474 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,7 +167,9 @@
 			isa = PBXGroup;
 			children = (
 				292ECA5728E885B4006CD474 /* card_data.xml */,
+				292ECA5D28E8A7C1006CD474 /* PaymentLib.swift */,
 				292ECA5228E86859006CD474 /* Factory */,
+				292ECA6D28EA0DD7006CD474 /* Service */,
 				292ECA4D28E86626006CD474 /* Data */,
 				292EC9E228E86117006CD474 /* PaymentLib.h */,
 				292EC9E328E86117006CD474 /* PaymentLib.docc */,
@@ -129,7 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				292ECA3628E862AF006CD474 /* PayrocExampleApp.swift */,
-				292ECA3828E862AF006CD474 /* ContentView.swift */,
+				292ECA6228E8E546006CD474 /* Views */,
 				292ECA3A28E862B0006CD474 /* Assets.xcassets */,
 				292ECA3F28E862B0006CD474 /* Persistence.swift */,
 				292ECA4128E862B0006CD474 /* PayrocExample.xcdatamodeld */,
@@ -149,10 +210,10 @@
 		292ECA4D28E86626006CD474 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				292ECA4E28E86639006CD474 /* XmlObj.swift */,
-				292ECA5028E866A6006CD474 /* PayRocXmlParser.swift */,
-				292ECA5528E8689A006CD474 /* Card.swift */,
+				292ECA8328EA1D14006CD474 /* Model */,
+				292ECA5F28E8E4CA006CD474 /* Xml */,
 				292ECA5B28E88A2A006CD474 /* TransactionType.swift */,
+				292ECA6028E8E4E5006CD474 /* PaymentError.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -161,8 +222,62 @@
 			isa = PBXGroup;
 			children = (
 				292ECA5328E86869006CD474 /* DataModelFactory.swift */,
+				292ECA6B28EA0D9E006CD474 /* ServiceFactory.swift */,
 			);
 			path = Factory;
+			sourceTree = "<group>";
+		};
+		292ECA5F28E8E4CA006CD474 /* Xml */ = {
+			isa = PBXGroup;
+			children = (
+				292ECA4E28E86639006CD474 /* XmlObj.swift */,
+				292ECA5028E866A6006CD474 /* PayRocXmlParser.swift */,
+				292ECA5528E8689A006CD474 /* Card.swift */,
+			);
+			path = Xml;
+			sourceTree = "<group>";
+		};
+		292ECA6228E8E546006CD474 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				292ECA6328E8E56A006CD474 /* MainView.swift */,
+				292ECA3828E862AF006CD474 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		292ECA6528E8E7B2006CD474 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		292ECA6D28EA0DD7006CD474 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				292ECA7428EA0F8A006CD474 /* APIEndPoint.swift */,
+				292ECA7728EA11C5006CD474 /* PaymentEndPoint.swift */,
+				292ECA7A28EA15B5006CD474 /* WebService.swift */,
+				292ECA7C28EA15C5006CD474 /* APIService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		292ECA8328EA1D14006CD474 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				292ECA7F28EA1693006CD474 /* PaymentRequest.swift */,
+				292ECA8428EA1D69006CD474 /* Order.swift */,
+				292ECA8628EA1D77006CD474 /* CustomerAccount.swift */,
+				292ECA8828EA1D84006CD474 /* Device.swift */,
+				292ECA8128EA169B006CD474 /* PaymentResponse.swift */,
+				292ECA8A28EA2893006CD474 /* SecurityCheck.swift */,
+				292ECA8C28EA28C3006CD474 /* TransactionResult.swift */,
+				292ECA8E28EA2997006CD474 /* AdditionalDataFields.swift */,
+				292ECA9028EAD108006CD474 /* EmvTags.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,10 +337,12 @@
 				292ECA3028E862AF006CD474 /* Sources */,
 				292ECA3128E862AF006CD474 /* Frameworks */,
 				292ECA3228E862AF006CD474 /* Resources */,
+				292ECA6A28E8E7B2006CD474 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				292ECA6928E8E7B2006CD474 /* PBXTargetDependency */,
 			);
 			name = PayrocExample;
 			productName = PayrocExample;
@@ -308,10 +425,26 @@
 			files = (
 				292ECA5428E86869006CD474 /* DataModelFactory.swift in Sources */,
 				292ECA4F28E86639006CD474 /* XmlObj.swift in Sources */,
+				292ECA8528EA1D69006CD474 /* Order.swift in Sources */,
+				292ECA8D28EA28C3006CD474 /* TransactionResult.swift in Sources */,
+				292ECA8928EA1D84006CD474 /* Device.swift in Sources */,
+				292ECA5E28E8A7C1006CD474 /* PaymentLib.swift in Sources */,
 				292ECA5628E8689A006CD474 /* Card.swift in Sources */,
+				292ECA8228EA169B006CD474 /* PaymentResponse.swift in Sources */,
+				292ECA8B28EA2893006CD474 /* SecurityCheck.swift in Sources */,
+				292ECA9128EAD108006CD474 /* EmvTags.swift in Sources */,
+				292ECA7528EA0F8A006CD474 /* APIEndPoint.swift in Sources */,
+				292ECA7828EA11C5006CD474 /* PaymentEndPoint.swift in Sources */,
+				292ECA7B28EA15B5006CD474 /* WebService.swift in Sources */,
 				292EC9E428E86117006CD474 /* PaymentLib.docc in Sources */,
+				292ECA6128E8E4E5006CD474 /* PaymentError.swift in Sources */,
+				292ECA8F28EA2997006CD474 /* AdditionalDataFields.swift in Sources */,
+				292ECA7D28EA15C5006CD474 /* APIService.swift in Sources */,
 				292ECA5C28E88A2A006CD474 /* TransactionType.swift in Sources */,
+				292ECA8728EA1D77006CD474 /* CustomerAccount.swift in Sources */,
+				292ECA8028EA1693006CD474 /* PaymentRequest.swift in Sources */,
 				292ECA5128E866A6006CD474 /* PayRocXmlParser.swift in Sources */,
+				292ECA6C28EA0D9E006CD474 /* ServiceFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +463,7 @@
 				292ECA4328E862B0006CD474 /* PayrocExample.xcdatamodeld in Sources */,
 				292ECA4028E862B0006CD474 /* Persistence.swift in Sources */,
 				292ECA3928E862AF006CD474 /* ContentView.swift in Sources */,
+				292ECA6428E8E56A006CD474 /* MainView.swift in Sources */,
 				292ECA3728E862AF006CD474 /* PayrocExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +475,12 @@
 			isa = PBXTargetDependency;
 			target = 292EC9DE28E86117006CD474 /* PaymentLib */;
 			targetProxy = 292EC9EB28E86118006CD474 /* PBXContainerItemProxy */;
+		};
+		292ECA6928E8E7B2006CD474 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = 292EC9DE28E86117006CD474 /* PaymentLib */;
+			targetProxy = 292ECA6828E8E7B2006CD474 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -486,6 +626,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ie.leizhang.payroc.PaymentLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -513,6 +654,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ie.leizhang.payroc.PaymentLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
